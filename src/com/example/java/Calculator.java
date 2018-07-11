@@ -12,9 +12,10 @@ public class Calculator {
     private static final String RED = "red";
 
     public static void main(String[] args) {
-        String str1 = getInput("Enter a Number: ");
+        String string1 = getInput("Enter a Number: ");
         String string2 = getInput("Enter a Number: ");
-        String operation = getInput("Choose an operation (+ - * /):");
+
+        String op = getInput("Choose an operation (+ - * /):");
 
         double result;
 
@@ -23,18 +24,18 @@ public class Calculator {
 
 
         try {
-            switch (operation) {
+            switch (op) {
                 case "+":
-                    result = addValues(str1, string2);
+                    result = addValues(string2, string2);
                     break;
                 case "-":
-                    result = subtractValues(str1, string2);
+                    result = subtractValues(string2, string2);
                     break;
                 case "*":
-                    result = multiplyValues(str1, string2);
+                    result = multiplyValues(string2, string2);
                     break;
                 case "/":
-                    result = divideValues(str1, string2);
+                    result = divideValues(string2, string2);
                     break;
                 default:
                     System.out.println("Unrecognized operation!");
