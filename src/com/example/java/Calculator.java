@@ -47,10 +47,10 @@ public class Calculator {
             System.out.println("Number formatting exception " + e.getMessage());
         }
 
-        usColors();
+        useColor();
     }
 
-    private static void usColors() {
+    private static void useColor() {
         List<String> colors= new ArrayList<>();
 
         colors.add(RED);
